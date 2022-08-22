@@ -1,3 +1,5 @@
+/* GENERAL */
+
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
 
 * {
@@ -7,10 +9,11 @@
 
 }
 
+/* MAIN STYLE */
+
 body {
     min-height: 100vh;
     max-width: 1440px;
-    margin: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,6 +31,7 @@ body {
     border-radius: 25px;
     max-width: 400px;
     height: 650px;
+    margin: 25px;
     box-shadow: 0.1px 30px 50px -3px rgba(84, 115, 226, 0.2);
 }
 
@@ -92,6 +96,7 @@ body {
 button {
     background-color: hsl(245, 75%, 52%);
     color: white;
+    border: 0;
     border-radius: 10px;
     width: 320px;
     padding: 15px 0px 15px 0px;
@@ -102,7 +107,80 @@ button {
 }
 
 .cancel {
-    padding: 25px 0px 15px 0px;
+    margin: 25px 0px 15px 0px;
     font-weight: 900;
     color: hsl(224, 23%, 55%);
+}
+
+/* HOVER */
+
+.change:hover {
+    text-decoration: none;
+    color: hsl(224, 23%, 55%);
+    transition: ease-in-out 0.1s;
+}
+
+button:hover {
+    background-color: hsl(245, 67%, 66%);
+    border: 0;
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+.cancel:hover {
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+    transition: ease-in-out 0.1s;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 375px) {
+    
+    body {
+        background-color: rgb(224, 232, 255);
+        background-image: url("/FEM-order_summary_component/images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+    }
+
+    .container {
+        width: 335px;
+        height: 570px;
+        margin: 20px;
+    }
+
+    .title {
+        padding: 30px 30px 15px 30px;
+        font-size: 22px;
+    }
+
+    .plan  {
+        width: 275px;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .options {
+        width: 170px;
+    }
+
+    .cost,
+    .price {
+        font-size: 15px;
+    }
+
+    .change {
+        font-size: 13px;
+    }
+
+    .button {
+        max-width: 275px;
+    }
+
+    .cancel {
+        padding: 25px 0px 0px 0px;
+        margin: 0;
+    }
+
 }
