@@ -22,8 +22,8 @@
 
 ### Links
 
-- Solution URL: https://github.com/JojoRider/FEM-order_summary_component
-- Live Site URL: https://jojorider.github.io/FEM-order_summary_component/
+- Solution URL: https://github.com/alexandre-joliet/FEM-order_summary_component
+- Live Site URL: https://alexandre-joliet.github.io/FEM-order_summary_component/
 
 
 ---
